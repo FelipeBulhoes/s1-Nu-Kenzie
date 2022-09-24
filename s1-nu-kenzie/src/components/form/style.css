@@ -1,0 +1,119 @@
+.registerSection {
+  padding: 24px 16px;
+  border: 1px solid var(--gray-2);
+  border-radius: 6px;
+}
+
+.registerMainDiv1 h5 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.registerMainDiv1 input {
+  width: 96%;
+  height: 52px;
+  padding: 0 6px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--gray-1);
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--gray-3);
+}
+
+.registerMainDiv1 span {
+  font-size: 14px;
+  color: #868e96;
+}
+
+.registerMainDiv2 {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.subDiv1 {
+  width: 42%;
+  padding: 8px;
+  position: relative;
+}
+
+.subDiv1 h5 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.subDiv1 input {
+  width: 88%;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--gray-1);
+  padding: 0 6px;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--gray-3);
+}
+
+.subDiv1 h3 {
+  position: absolute;
+  top: 48px;
+  right: 22px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-3);
+}
+
+.subDiv2 {
+  width: 47%;
+  padding: 8px;
+}
+
+.subDiv2 h5 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.subDiv2 select {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--gray-1);
+  padding: 0 6px;
+  font-size: 18px;
+  color: var(--gray-3);
+}
+
+.insertTransactionBtn {
+  width: 100%;
+  background-color: var(--color-primary);
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .subDiv1 h3 {
+    right: 26px;
+  }
+
+  .insertTransactionBtn:hover {
+    background-color: var(--gray-1);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: 750ms;
+  }
+
+  .insertTransactionBtn:not(:hover) {
+    transition: 750ms;
+  }
+}

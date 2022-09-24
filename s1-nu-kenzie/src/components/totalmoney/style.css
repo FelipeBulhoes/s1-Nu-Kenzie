@@ -1,0 +1,31 @@
+.totalDisplay {
+  padding: 24px 16px;
+  border: 1px solid var(--gray-2);
+  border-radius: 6px;
+  margin: 20px 0 20px 0;
+}
+
+.totalDisplay div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalDisplay div h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.totalDisplay div span {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.totalDisplay p {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: var(--gray-3);
+  margin: 16px 0px 2px 0px;
+}

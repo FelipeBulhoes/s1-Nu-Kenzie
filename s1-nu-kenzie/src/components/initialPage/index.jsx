@@ -6,12 +6,13 @@ import illustration from "./illustration.svg";
 
 const InitialPage = ({ goToDashboard }) => {
   return (
-    <main>
+    <main className="initialPageMain">
       <div className="infoDiv">
         <img src={logo} alt="logo" className="logo" />
         <img src={financasImg} alt="Texto" className="financasImg" />
         <p>de forma rápida e segura</p>
         <button
+          className="goToDashboardBtn"
           onClick={() => {
             goToDashboard();
           }}
