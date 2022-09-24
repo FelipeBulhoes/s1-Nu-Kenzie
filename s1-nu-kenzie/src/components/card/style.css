@@ -55,7 +55,7 @@ li main {
   color: var(--gray-3);
 }
 
-.deleteTransBtn {
+#deleteTransBtn {
   width: 24px;
   height: 24px;
   border: none;
@@ -67,7 +67,7 @@ li main {
   cursor: pointer;
 }
 
-.deleteTransBtn img {
+#deleteTransBtn img {
   width: 13px;
   height: 13px;
 }
@@ -81,7 +81,7 @@ li main {
     width: 22%;
   }
 
-  .deleteTransBtn:hover {
+  #deleteTransBtn:hover {
     border: 1px solid var(--gray-3);
   }
 }

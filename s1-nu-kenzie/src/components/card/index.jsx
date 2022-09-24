@@ -1,7 +1,13 @@
 import trash from "./delete.png";
 import "./style.css";
 
-const TransactionCard = ({ description, type, value }) => {
+const TransactionCard = ({
+  description,
+  type,
+  value,
+  listTransactions,
+  setListTransactions,
+}) => {
   function checkValueType() {
     const tempData = {
       newValue: 0,
@@ -18,6 +24,15 @@ const TransactionCard = ({ description, type, value }) => {
     return tempData;
   }
 
+  function deleteCard(name) {
+    const newArr = listTransactions.filter((trans) => {
+      if (trans.description !== name) {
+        return trans;
+      }
+    });
+    setListTransactions(newArr);
+  }
+
   return (
     <li className={checkValueType().newClass}>
       <main>
@@ -28,8 +43,14 @@ const TransactionCard = ({ description, type, value }) => {
 
           <div>
             <span>R${checkValueType().newValue}</span>
-            <button className="deleteTransBtn">
-              <img src={trash} alt="" />
+            <button
+              id="deleteTransBtn"
+              className={description}
+              onClick={(event) => {
+                deleteCard(event.target.className);
+              }}
+            >
+              <img src={trash} alt="" className={description} />
             </button>
           </div>
         </section>

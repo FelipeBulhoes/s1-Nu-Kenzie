@@ -22,7 +22,10 @@ const Dashboard = ({ goToInitialPage }) => {
           <TotalMoney listTransactions={listTransactions} />
         </div>
         <div className="mainTransList">
-          <TransactionsList listTransactions={listTransactions} />
+          <TransactionsList
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          />
         </div>
       </main>
     </>

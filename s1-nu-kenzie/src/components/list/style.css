@@ -14,6 +14,7 @@
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 16px;
 }
 
 .filterDiv nav {
@@ -24,7 +25,7 @@
   justify-content: space-between;
 }
 
-.filterDiv nav button {
+.notActiveBtn {
   width: 28%;
   height: 32px;
   border: none;
@@ -58,6 +59,18 @@
   overflow-y: scroll;
 }
 
+.mainListDiv ul h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto 14px auto;
+  width: 264px;
+}
+
+.mainListDiv ul img {
+  width: 100%;
+}
+
 ::-webkit-scrollbar {
   width: 3px;
 }
@@ -80,5 +93,15 @@
 
   .filterDiv nav button:not(:hover) {
     transition: 600ms;
+  }
+
+  .mainListDiv ul h2 {
+    font-size: 20px;
+    margin: 0 auto 26px auto;
+    width: 330px;
+  }
+
+  .filterDiv nav button {
+    height: 42px;
   }
 }
