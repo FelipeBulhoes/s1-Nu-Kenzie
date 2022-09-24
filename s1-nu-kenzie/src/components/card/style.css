@@ -6,6 +6,7 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
+  animation: liAnimation 1s;
 }
 
 .entry {
@@ -17,6 +18,7 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
+  animation: liAnimation 1s;
 }
 
 li main {
@@ -70,6 +72,15 @@ li main {
 #deleteTransBtn img {
   width: 13px;
   height: 13px;
+}
+
+@keyframes liAnimation {
+  0% {
+    transform: translateY(-125%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 768px) {

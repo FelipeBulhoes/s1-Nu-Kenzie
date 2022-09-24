@@ -1,7 +1,6 @@
 import TransactionCard from "../card";
 import "./style.css";
 import noCards from "./NoCard.png";
-import { useState } from "react";
 
 const TransactionsList = ({ listTransactions, setListTransactions }) => {
   return (

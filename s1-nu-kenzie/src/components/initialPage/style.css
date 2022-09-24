@@ -13,6 +13,7 @@ body {
 .infoDiv {
   max-width: 331.5px;
   margin: 0 auto;
+  animation: mainAnimation 2s;
 }
 
 .financasImg {
@@ -41,6 +42,17 @@ body {
   display: none;
 }
 
+@keyframes mainAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media screen and (min-width: 940px) {
   .initialPageMain {
     height: 100vh;
@@ -58,6 +70,7 @@ body {
   .imgDiv {
     display: block;
     height: 593px;
+    animation: imgAnimation 2s;
   }
 
   .goToDashboardBtn:hover {
@@ -68,5 +81,16 @@ body {
 
   .goToDashboardBtn:not(:hover) {
     transition: 750ms;
+  }
+
+  @keyframes imgAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
